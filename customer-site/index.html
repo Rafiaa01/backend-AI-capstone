@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyRank Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <h1>FlyRank</h1>
+
+        <nav>
+            <a href="#" class="active">Dashboard</a>
+            <a href="#">Widgets</a>
+            <a href="#">Submissions</a>
+        </nav>
+    </div>
+
+    <main class="main">
+
+        <header>
+            <div>
+                <h2>Dashboard</h2>
+                <p>Manage your widgets and submissions.</p>
+            </div>
+        </header>
+
+        <section class="stats">
+
+            <div class="card">
+                <span>Total Widgets</span>
+                <strong id="widget-count">0</strong>
+            </div>
+
+            <div class="card">
+                <span>Total Submissions</span>
+                <strong id="submission-count">0</strong>
+            </div>
+
+            <div class="card">
+                <span>Completed</span>
+                <strong id="completed-count">0</strong>
+            </div>
+
+        </section>
+
+        <section class="panel">
+
+            <div class="panel-header">
+                <div>
+                    <h3>Widgets</h3>
+                    <p>Your available FlyRank widgets.</p>
+                </div>
+            </div>
+
+            <div id="widgets" class="widget-grid">
+                Loading widgets...
+            </div>
+
+        </section>
+
+        <section class="panel">
+
+            <div class="panel-header">
+                <div>
+                    <h3>Recent Submissions</h3>
+                    <p>Latest leads captured through your widgets.</p>
+                </div>
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Widget</th>
+                            <th>Status</th>
+                            <th>Created</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="submissions">
+                        <tr>
+                            <td colspan="6">Loading submissions...</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
